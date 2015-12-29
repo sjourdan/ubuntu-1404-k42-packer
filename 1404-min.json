@@ -1,6 +1,6 @@
 {
   "variables": {
-    "name": "cbednarski/ubuntu-1404",
+    "name": "sjourdan/ubuntu-1404-ucp",
     "cpu_cores": "1",
     "memory": "512",
     "disk_size": "40960",

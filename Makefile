@@ -20,7 +20,7 @@ clean-all: clean
 	rm -rf packer_cache
 
 install:
-	vagrant box add ubuntu-1404-vbox ./ubuntu-1404-vbox.box --provider virtualbox --force || true
-	vagrant box add ubuntu-1404-vmware ./ubuntu-1404-vmware.box --provider vmware_desktop --force || true
-	vagrant box list | grep ubuntu-1404
+	vagrant box add ubuntu-1404-ucp ./ubuntu-1404-vbox.box --provider virtualbox --force || true
+	vagrant box add ubuntu-1404-ucp ./ubuntu-1404-vmware.box --provider vmware_desktop --force || true
+	vagrant box list | grep ubuntu-1404-ucp
 	@echo Boxes have been installed. Run make clean-all to reclaim disk space.
