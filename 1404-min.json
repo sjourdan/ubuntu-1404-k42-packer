@@ -1,7 +1,6 @@
 {
   "variables": {
     "name": "sjourdan/ubuntu-1404-k42",
-    "version": "0.1.0",
     "cpu_cores": "1",
     "memory": "512",
     "disk_size": "40960",
@@ -140,8 +139,7 @@
       "artifact_type": "vagrant.box",
       "metadata": {
         "provider": "virtualbox",
-        "created_at": "{{timestamp}}",
-        "version": "{{user `version`}}"
+        "created_at": "{{timestamp}}"
       }
     },
     {
@@ -151,8 +149,7 @@
       "artifact_type": "vagrant.box",
       "metadata": {
         "provider": "vmware",
-        "created_at": "{{timestamp}}",
-        "version": "{{user `version`}}"
+        "created_at": "{{timestamp}}"
       }
     }
   ]
