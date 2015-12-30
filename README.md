@@ -6,17 +6,17 @@ The image includes guest additions and basically nothing else, plus a 4.2.x kern
 
 ## Atlas
 
-You can download releases of this VM from [Atlas](https://atlas.hashicorp.com/sjourdan/boxes/ubuntu-1404-ucp) via:
+You can download releases of this VM from [Atlas](https://atlas.hashicorp.com/sjourdan/boxes/ubuntu-1404-k42) via:
 
-    vagrant init sjourdan/ubuntu-1404-ucp
+    vagrant init sjourdan/ubuntu-1404-k42
     vagrant up
 
 ## Build It
 
 With [packer installed](http://www.packer.io/intro/getting-started/setup.html):
 
-    git clone https://github.com/sjourdan/ubuntu-1404-ucp-packer
-    cd ubuntu-1404-ucp-packer
+    git clone https://github.com/sjourdan/ubuntu-1404-k42-packer
+    cd ubuntu-1404-k42-packer
     make
     make install
 
