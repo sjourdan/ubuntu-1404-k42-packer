@@ -1,6 +1,7 @@
 {
   "variables": {
-    "name": "sjourdan/ubuntu-1404-ucp",
+    "name": "sjourdan/ubuntu-1404-k42",
+    "version": "0.1.0",
     "cpu_cores": "1",
     "memory": "512",
     "disk_size": "40960",
@@ -129,8 +130,30 @@
     {
       "type": "vagrant",
       "compression_level": 9,
-      "keep_input_artifact": true,
+      "keep_input_artifact": false,
       "output": "ubuntu-1404-{{.BuildName}}.box"
     }
-  ]
+  ],
+    {
+      "type": "atlas",
+      "only": ["virtualbox-iso"],
+      "artifact": "{{user `name`}}",
+      "artifact_type": "vagrant.box",
+      "metadata": {
+        "provider": "virtualbox",
+        "created_at": "{{timestamp}}",
+        "version": "{{user `version`}}"
+      }
+    },
+    {
+      "type": "atlas",
+      "only": ["vmware-iso"],
+      "artifact": "{{user `name`}}",
+      "artifact_type": "vagrant.box",
+      "metadata": {
+        "provider": "vmware",
+        "created_at": "{{timestamp}}",
+        "version": "{{user `version`}}"
+      }
+    }
 }

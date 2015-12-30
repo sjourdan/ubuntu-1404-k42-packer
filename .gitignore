@@ -3,3 +3,4 @@
 *.box
 *.iso
 tmp/
+atlas-auth.json

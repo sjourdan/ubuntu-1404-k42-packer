@@ -4,7 +4,7 @@ This creates a Ubuntu 14.04.3 server virtual machine images for use with Vagrant
 
 The image includes guest additions and basically nothing else, plus a 4.2.x kernel from Ubuntu Wily (for [OverlayFS](https://en.wikipedia.org/wiki/OverlayFS) support, usage with [Docker UCP](http://www.docker.com/universal-control-plane) and more).
 
-## Atlas
+## Use from Atlas
 
 You can download releases of this VM from [Atlas](https://atlas.hashicorp.com/sjourdan/boxes/ubuntu-1404-k42) via:
 
