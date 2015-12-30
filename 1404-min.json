@@ -110,7 +110,7 @@
     {
       "only": ["vmware"],
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -E -S bash '{{.Path}}'",
-      "script": "scripts/vmware.sh",
+      "script": "scripts/open-vm.sh",
       "type": "shell"
     },
     {
