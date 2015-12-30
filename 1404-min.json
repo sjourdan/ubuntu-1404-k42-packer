@@ -126,7 +126,7 @@
     }
   ],
   "post-processors": [
-    {
+    [{
       "type": "vagrant",
       "compression_level": 9,
       "keep_input_artifact": false,
@@ -151,6 +151,6 @@
         "provider": "vmware",
         "created_at": "{{timestamp}}"
       }
-    }
+    }]
   ]
 }
