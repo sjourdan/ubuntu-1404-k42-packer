@@ -148,7 +148,7 @@
       "artifact": "{{user `name`}}",
       "artifact_type": "vagrant.box",
       "metadata": {
-        "provider": "vmware",
+        "provider": "vmware_desktop",
         "created_at": "{{timestamp}}"
       }
     }]
